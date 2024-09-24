@@ -10,6 +10,19 @@ const io = socketio(server);
 
 io.on("connection", (socket) => {
   console.log("New WebSocket connection");
+
+  socket.on("send-location", function (data) {
+    io.emit("receive-location", {
+      id: socket.id,
+      ...data,
+    });
+  });
+
+  socket.on("disconnect", () => {
+    io.emit("user-disconnected", {
+      id: socket.id,
+    });
+  });
 });
 
 app.set("view engine", "ejs");
