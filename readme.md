@@ -25,25 +25,25 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 
-   \`bash
+   `\bash
    git clone https://github.com/your-username/real-time-location-app.git
    cd real-time-location-app
-   \`
+   `
 
 2. Install the dependencies:
 
-   \`\`\`bash
+   `
    npm install
-   \`\`\`
+   `
 
 3. Start the server:
 
-   \`\`\`bash
+   `bash
    npm start
-   \`\`\`
+ `
 
 4. Open your browser and go to:
 
-   \`\`\`
+   `
    http://localhost:3000
-   \`\`\`
+  `
